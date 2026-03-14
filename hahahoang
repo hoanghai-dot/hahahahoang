@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hoang Portfolio</title>
+</head>
+
+<body>
+
+<h1>Hello, I'm Hoang</h1>
+
+<p>Welcome to my portfolio</p>
+
+<h2>About me</h2>
+<p>I am currently a sophomore studying at Foreign Trade University with a strong interest in financial research and data-driven analysis..</p>
+
+<h2>Education</h2>
+<ul>
+<li>Foreign Trade University</li>
+<li>Major: Accounting and Auditing ACCA oriented program</li>
+<li>GPA: 3.45 / 4.0</li>
+<li>IELTS 7.0</li>
+</ul></p>
+
+<h2>Skills</h2>
+<ul>
+<li>Econometrics & statistical analysis</li>
+<li>Research</li>
+<li>Analytical problem solving</li>
+<li>Critical Thinking</li>
+</ul>
+
+<h2>Experience</h2>
+<ul>
+<li>Accounting Assistant at IDTECH</li>
+<li>English Tutor</li>
+</ul>
+
+<h2>Achievement</h2>
+<ul>
+<li>Top 20 in TEC STARTUP PROGRAM 2025</li>
+</ul>
+
+<h2>Contact</h2>
+<p>Email: hoanghai2282@gmail.com</p>
+
+</body>
+</html>
