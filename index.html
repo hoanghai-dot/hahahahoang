@@ -2,81 +2,115 @@
 <html>
 
 <head>
-<title>Hoang Portfolio</title>
+<title>Hoang Le Portfolio</title>
 
 <style>
 
 body{
-    font-family: 'Segoe UI', sans-serif;
-    margin:0;
-    background: linear-gradient(135deg,#667eea,#764ba2);
+font-family:'Segoe UI',sans-serif;
+margin:0;
+background:linear-gradient(135deg,#667eea,#764ba2);
 }
 
-/* container */
-
-.container{
-    max-width:1000px;
-    margin:auto;
-    padding:40px;
-}
-
-/* hero section */
+/* HERO */
 
 .hero{
-    background:white;
-    padding:40px;
-    border-radius:15px;
-    display:flex;
-    align-items:center;
-    gap:30px;
-    margin-bottom:30px;
+text-align:center;
+color:white;
+padding:60px 20px;
 }
 
 .avatar{
-    width:120px;
-    height:120px;
-    border-radius:50%;
-    object-fit:cover;
+width:150px;
+height:150px;
+border-radius:50%;
+border:5px solid white;
+object-fit:cover;
 }
 
-.hero-text h1{
-    margin:0;
+.hero h1{
+margin:15px 0 5px;
 }
 
-.hero-text p{
-    color:#555;
+/* LAYOUT */
+
+.container{
+display:grid;
+grid-template-columns:300px 1fr;
+max-width:1100px;
+margin:auto;
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 15px 40px rgba(0,0,0,0.2);
 }
 
-/* card section */
+/* SIDEBAR */
+
+.sidebar{
+background:#f2f2f2;
+padding:30px;
+}
+
+.sidebar h3{
+border-bottom:2px solid #ccc;
+padding-bottom:5px;
+}
+
+.sidebar ul{
+padding-left:18px;
+}
+
+.sidebar li{
+margin-bottom:6px;
+}
+
+/* MAIN */
+
+.main{
+padding:40px;
+}
+
+.section{
+margin-bottom:35px;
+}
+
+.section h2{
+border-bottom:2px solid #eee;
+padding-bottom:5px;
+}
+
+/* EXPERIENCE CARD */
 
 .card{
-    background:white;
-    padding:25px;
-    border-radius:12px;
-    margin-bottom:20px;
-    box-shadow:0 6px 15px rgba(0,0,0,0.1);
-    transition:0.3s;
+background:#f8f8f8;
+padding:20px;
+border-radius:10px;
+margin-bottom:15px;
 }
 
-.card:hover{
-    transform:translateY(-5px);
+.year{
+float:right;
+color:#777;
+font-size:14px;
 }
 
-h2{
-    border-bottom:2px solid #eee;
-    padding-bottom:5px;
+/* SKILL BAR */
+
+.skill{
+margin-bottom:12px;
 }
 
-ul{
-    padding-left:20px;
+.bar{
+background:#ddd;
+height:8px;
+border-radius:10px;
+overflow:hidden;
 }
 
-li{
-    margin-bottom:6px;
-}
-
-.contact{
-    text-align:center;
+.fill{
+height:100%;
+background:#667eea;
 }
 
 </style>
@@ -85,86 +119,157 @@ li{
 
 <body>
 
-<div class="container">
-
 <div class="hero">
 
 <img src="avatar.jpg" class="avatar">
 
-<div class="hero-text">
+<h1>Hoang Le</h1>
 
-<h1>Le Hai Hoang</h1>
+<p>Accounting & Finance Student | Econometrics | Financial Analysis</p>
+
+</div>
+
+<div class="container">
+
+<div class="sidebar">
+
+<h3>Contact</h3>
+
+<p>📞 0868192948</p>
+<p>✉ hoanghai2282@gmail.com</p>
+
+<h3>Skills</h3>
+
+<ul>
+<li>Leadership & team management</li>
+<li>Effective communication</li>
+<li>Team collaboration</li>
+<li>Analytical thinking</li>
+<li>Critical thinking</li>
+</ul>
+
+<h3>Languages</h3>
+
+<ul>
+<li>English (IELTS 7.0)</li>
+<li>Chinese (Basic)</li>
+<li>Vietnamese (Fluent)</li>
+</ul>
+
+<h3>Target</h3>
+
+<ul>
+<li>Acquire practical insights in entrepreneurship</li>
+<li>Embrace continuous learning</li>
+<li>Build networks with talented peers</li>
+<li>Cultivate growth mindset</li>
+</ul>
+
+</div>
+
+<div class="main">
+
+<div class="section">
+
+<h2>Profile</h2>
 
 <p>
-Accounting & Auditing student at Foreign Trade University interested in financial research and data-driven analysis.
+Majoring in accounting and auditing with an ACCA orientation, I have developed strong skills in financial analysis, risk assessment, and practical problem solving. My strengths include attention to detail, critical thinking, and the ability to work effectively with both quantitative data and professional standards.
 </p>
 
 </div>
+
+<div class="section">
+
+<h2>Work Experience</h2>
+
+<div class="card">
+
+<strong>Accounting Assistant</strong>
+
+<span class="year">2025</span>
+
+<p>
+Vietnam Resources and Environment Technology Investment Development Joint Stock Company
+</p>
+
+<ul>
+
+<li>Managed financial documentation and reporting to support transparent business operations</li>
+
+<li>Maintained accuracy in invoice and document management</li>
+
+<li>Supported efficient resource management in daily operations</li>
+
+</ul>
 
 </div>
 
 <div class="card">
 
-<h2>About</h2>
+<strong>Scientific Research Project</strong>
 
-<p>
-I am currently a sophomore studying at Foreign Trade University with a strong interest in financial research, econometrics and quantitative analysis.
-</p>
+<span class="year">2025</span>
+
+<p>Faculty-level scientific research project for students</p>
+
+<ul>
+
+<li>Conducted research on factors influencing students’ decision to pursue ACCA</li>
+
+<li>Improved data analysis, problem-solving and academic writing skills</li>
+
+</ul>
 
 </div>
 
 <div class="card">
+
+<strong>Startup Academic Project</strong>
+
+<span class="year">2024</span>
+
+<ul>
+
+<li>Developed a business idea and drafted a basic business model</li>
+
+<li>Strengthened teamwork and entrepreneurial thinking</li>
+
+<li>Applied financial knowledge to practical solutions</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="section">
 
 <h2>Education</h2>
 
-<ul>
-<li>Foreign Trade University</li>
-<li>Major: Accounting and Auditing (ACCA Oriented Program)</li>
-<li>GPA: 3.45 / 4.0</li>
-<li>IELTS: 7.0</li>
-</ul>
+<div class="card">
+
+<strong>Foreign Trade University</strong>
+
+<span class="year">2024 - 2028</span>
+
+<p>Major: Accounting and Auditing (ACCA orientation)</p>
+
+<p>GPA: 3.4 / 4.0</p>
 
 </div>
 
 <div class="card">
 
-<h2>Skills</h2>
+<strong>Le Quy Don Ha Dong High School</strong>
 
-<ul>
-<li>Econometrics & Statistical Analysis</li>
-<li>Research</li>
-<li>Analytical Problem Solving</li>
-<li>Critical Thinking</li>
-</ul>
+<span class="year">2021 - 2024</span>
+
+<p>Final GPA: 9.4 / 10</p>
 
 </div>
 
-<div class="card">
-
-<h2>Experience</h2>
-
-<ul>
-<li>Accounting Assistant – IDTECH</li>
-<li>English Tutor</li>
-</ul>
-
 </div>
-
-<div class="card">
-
-<h2>Achievements</h2>
-
-<ul>
-<li>Top 20 – TEC Startup Program 2025</li>
-</ul>
-
-</div>
-
-<div class="card contact">
-
-<h2>Contact</h2>
-
-<p>Email: hoanghai2282@gmail.com</p>
 
 </div>
 
