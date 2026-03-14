@@ -2,59 +2,74 @@
 <html>
 
 <head>
-<title>Hoang Le Portfolio</title>
+
+<title>Le Hai Hoang Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 
 body{
-font-family:'Segoe UI',sans-serif;
 margin:0;
-background:linear-gradient(135deg,#667eea,#764ba2);
+font-family: 'Segoe UI',sans-serif;
+background: linear-gradient(135deg,#667eea,#764ba2);
 }
 
 /* HERO */
 
 .hero{
 text-align:center;
-color:white;
 padding:60px 20px;
+color:white;
 }
 
 .avatar{
-width:150px;
-height:150px;
+width:160px;
+height:160px;
 border-radius:50%;
-border:5px solid white;
+border:6px solid white;
 object-fit:cover;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
 }
 
 .hero h1{
-margin:15px 0 5px;
+margin-top:20px;
+font-size:36px;
 }
 
-/* LAYOUT */
+.hero p{
+opacity:0.9;
+}
+
+/* CONTAINER */
 
 .container{
-display:grid;
-grid-template-columns:300px 1fr;
 max-width:1100px;
 margin:auto;
+display:grid;
+grid-template-columns:300px 1fr;
 background:white;
-border-radius:10px;
+border-radius:12px;
 overflow:hidden;
-box-shadow:0 15px 40px rgba(0,0,0,0.2);
+box-shadow:0 20px 40px rgba(0,0,0,0.2);
+margin-bottom:50px;
 }
 
 /* SIDEBAR */
 
 .sidebar{
-background:#f2f2f2;
+background:#f4f6f9;
 padding:30px;
 }
 
 .sidebar h3{
-border-bottom:2px solid #ccc;
+margin-top:30px;
+border-bottom:2px solid #ddd;
 padding-bottom:5px;
+}
+
+.sidebar p{
+margin:8px 0;
 }
 
 .sidebar ul{
@@ -62,7 +77,7 @@ padding-left:18px;
 }
 
 .sidebar li{
-margin-bottom:6px;
+margin-bottom:8px;
 }
 
 /* MAIN */
@@ -72,37 +87,43 @@ padding:40px;
 }
 
 .section{
-margin-bottom:35px;
+margin-bottom:40px;
 }
 
 .section h2{
 border-bottom:2px solid #eee;
-padding-bottom:5px;
+padding-bottom:6px;
 }
 
-/* EXPERIENCE CARD */
+/* CARD */
 
 .card{
-background:#f8f8f8;
+background:#fafafa;
 padding:20px;
 border-radius:10px;
-margin-bottom:15px;
+margin-top:15px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
 }
 
 .year{
 float:right;
-color:#777;
+color:#888;
 font-size:14px;
 }
 
 /* SKILL BAR */
 
 .skill{
-margin-bottom:12px;
+margin-top:10px;
 }
 
 .bar{
-background:#ddd;
+background:#e0e0e0;
 height:8px;
 border-radius:10px;
 overflow:hidden;
@@ -110,7 +131,16 @@ overflow:hidden;
 
 .fill{
 height:100%;
-background:#667eea;
+background:linear-gradient(90deg,#667eea,#764ba2);
+}
+
+/* FOOTER */
+
+.footer{
+text-align:center;
+color:white;
+padding:20px;
+opacity:0.8;
 }
 
 </style>
@@ -123,9 +153,9 @@ background:#667eea;
 
 <img src="avatar.jpg" class="avatar">
 
-<h1>Hoang Le</h1>
+<h1>Le Hai Hoang</h1>
 
-<p>Accounting & Finance Student | Econometrics | Financial Analysis</p>
+<p>Accounting & Auditing Student</p>
 
 </div>
 
@@ -135,18 +165,27 @@ background:#667eea;
 
 <h3>Contact</h3>
 
-<p>📞 0868192948</p>
-<p>✉ hoanghai2282@gmail.com</p>
+<p><i class="fa fa-phone"></i> 0868192948</p>
+
+<p><i class="fa fa-envelope"></i> hoanghai2282@gmail.com</p>
 
 <h3>Skills</h3>
 
-<ul>
-<li>Leadership & team management</li>
-<li>Effective communication</li>
-<li>Team collaboration</li>
-<li>Analytical thinking</li>
-<li>Critical thinking</li>
-</ul>
+<div class="skill">Analytical Thinking
+<div class="bar"><div class="fill" style="width:90%"></div></div>
+</div>
+
+<div class="skill">Financial Analysis
+<div class="bar"><div class="fill" style="width:85%"></div></div>
+</div>
+
+<div class="skill">Research
+<div class="bar"><div class="fill" style="width:80%"></div></div>
+</div>
+
+<div class="skill">Critical Thinking
+<div class="bar"><div class="fill" style="width:90%"></div></div>
+</div>
 
 <h3>Languages</h3>
 
@@ -156,13 +195,13 @@ background:#667eea;
 <li>Vietnamese (Fluent)</li>
 </ul>
 
-<h3>Target</h3>
+<h3>Career Goals</h3>
 
 <ul>
-<li>Acquire practical insights in entrepreneurship</li>
-<li>Embrace continuous learning</li>
-<li>Build networks with talented peers</li>
-<li>Cultivate growth mindset</li>
+<li>Gain practical insights in entrepreneurship</li>
+<li>Develop financial analytical skills</li>
+<li>Build strong professional networks</li>
+<li>Continuously improve research ability</li>
 </ul>
 
 </div>
@@ -174,8 +213,28 @@ background:#667eea;
 <h2>Profile</h2>
 
 <p>
-Majoring in accounting and auditing with an ACCA orientation, I have developed strong skills in financial analysis, risk assessment, and practical problem solving. My strengths include attention to detail, critical thinking, and the ability to work effectively with both quantitative data and professional standards.
+Majoring in Accounting and Auditing with an ACCA-oriented program at Foreign Trade University, I have developed strong foundations in financial analysis, econometrics, and research. I am particularly interested in applying quantitative methods and data-driven thinking to solve real financial problems.
 </p>
+
+<p>
+Through academic projects and professional experiences, I have strengthened my analytical thinking, attention to detail, and ability to communicate insights effectively. I aim to build a career in financial analysis and research where rigorous thinking and practical impact meet.
+</p>
+
+</div>
+
+<div class="card">
+
+<strong>Scientific Research Project</strong>
+
+<span class="year">2026</span>
+
+<ul>
+
+<li>Conducted research on The Impact of Institutional Factors on IFRS Adoption in Asian Countries and the Moderating Role of Foreign Direct Investment</li>
+
+<li>Improved statistical analysis and academic writing skills</li>
+
+</ul>
 
 </div>
 
@@ -189,35 +248,15 @@ Majoring in accounting and auditing with an ACCA orientation, I have developed s
 
 <span class="year">2025</span>
 
-<p>
-Vietnam Resources and Environment Technology Investment Development Joint Stock Company
-</p>
+<p>Vietnam Resources and Environment Technology Investment Development JSC</p>
 
 <ul>
 
-<li>Managed financial documentation and reporting to support transparent business operations</li>
+<li>Managed financial documentation and reporting</li>
 
-<li>Maintained accuracy in invoice and document management</li>
+<li>Maintained invoice accuracy and document organization</li>
 
-<li>Supported efficient resource management in daily operations</li>
-
-</ul>
-
-</div>
-
-<div class="card">
-
-<strong>Scientific Research Project</strong>
-
-<span class="year">2025</span>
-
-<p>Faculty-level scientific research project for students</p>
-
-<ul>
-
-<li>Conducted research on factors influencing students’ decision to pursue ACCA</li>
-
-<li>Improved data analysis, problem-solving and academic writing skills</li>
+<li>Supported resource management for daily operations</li>
 
 </ul>
 
@@ -231,13 +270,31 @@ Vietnam Resources and Environment Technology Investment Development Joint Stock 
 
 <ul>
 
-<li>Developed a business idea and drafted a basic business model</li>
+<li>Developed a startup idea and basic business model</li>
 
-<li>Strengthened teamwork and entrepreneurial thinking</li>
+<li>Strengthened teamwork and entrepreneurial mindset</li>
 
 <li>Applied financial knowledge to practical solutions</li>
 
 </ul>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>🏆 Achievements</h2>
+
+<div class="card">
+
+<strong>Top 20 – TEC Startup Program</strong>
+
+<span class="year">2025</span>
+
+<p>
+Selected among the Top teams in the TEC Startup Program 2025 for developing and presenting a startup business idea and basic business model.
+</p>
 
 </div>
 
@@ -253,9 +310,9 @@ Vietnam Resources and Environment Technology Investment Development Joint Stock 
 
 <span class="year">2024 - 2028</span>
 
-<p>Major: Accounting and Auditing (ACCA orientation)</p>
+<p>Major: Accounting & Auditing (ACCA orientation)</p>
 
-<p>GPA: 3.4 / 4.0</p>
+<p>GPA: 3.45 / 4.0</p>
 
 </div>
 
@@ -272,6 +329,12 @@ Vietnam Resources and Environment Technology Investment Development Joint Stock 
 </div>
 
 </div>
+
+</div>
+
+<div class="footer">
+
+© 2025 Le Hai Hoang Portfolio
 
 </div>
 
